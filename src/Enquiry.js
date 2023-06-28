@@ -13,7 +13,7 @@ export default function Enquiry()
 			errors.name = "invalid name";
 		if (! values.name.match('[A-Za-z ]+') )
 			errors.name = "name shud contain only alphabets";
-		if (values.phone.toString().length != 10)
+		if (values.phone.toString().length !== 10)
 			errors.phone = "invalid phone";
 		if (values.query.trim().length < 2)
 			errors.query = "invalid query";
